@@ -9,7 +9,7 @@ var groupName = "auction-" + auctionId;
 
 connection.start().then(function () {
     document.getElementById("sendButton").disabled = false;
-    connection.invoke("AddToGroup", groupName).catch(function (err) {
+    connection.invoke("AddToGroupAsync", groupName).catch(function (err) {
         return console.error(err.toString());
     });
 }).catch(function (err) {
