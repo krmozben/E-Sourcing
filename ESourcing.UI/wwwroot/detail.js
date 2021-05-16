@@ -94,7 +94,7 @@ function SendCompleteBid(model) {
         success: function (response) {
             if (response) {
                 console.log("ıslemınız basarıyla sonuclandı");
-                location.href = "https://localhost:44398/Auction/Index";
+                location.href = "https://localhost:44355/Auction/Index";
             }
         },
         error: function (jqXHR, textStatus, errorThrown) {
